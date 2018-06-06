@@ -1,0 +1,38 @@
+body {
+  background: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login--container {
+  background: white;
+}
+.login--container .login--form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.login--container .login--form input[type=text],
+.login--container .login--form input[type=password] {
+  padding: .75rem 2rem;
+  outline: none;
+  margin-top: .5rem;
+  min-width: 15rem;
+}
+.login--container .login--form button {
+  border: 1px solid darkgray;
+  padding: .5rem;
+  margin-top: 1rem;
+  outline: none;
+}
+.login--container .messages .message {
+  color: white;
+  padding: 1rem;
+}
+.login--container .messages .message.is--success {
+  background: #00E676;
+}
+.login--container .messages .message.is--error {
+  background: #FF3D00;
+}

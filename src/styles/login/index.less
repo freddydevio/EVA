@@ -1,0 +1,42 @@
+body {
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login--container {
+    background: white;
+    .login--form {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        input[type=text],
+        input[type=password] {
+            padding: .75rem 2rem;
+            outline: none;
+            margin-top: .5rem;
+            min-width: 15rem;
+        }
+        button {
+            border: 1px solid darkgray;
+            padding: .5rem;
+            margin-top: 1rem;
+            outline: none;
+        }
+    }
+
+    .messages {
+        .message {
+            color: white;
+            padding: 1rem;
+            &.is--success {
+                background: #00E676;
+            }
+            &.is--error {
+                background: #FF3D00;
+            }
+        }
+    }
+}
